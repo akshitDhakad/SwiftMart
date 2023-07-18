@@ -1,35 +1,26 @@
-export const depositMoney = (amount) => {
-    return (dispatch) => {
-      dispatch({
-        type: 'deposit',
-        payload: amount,
-      });
-    };
-  };
-  
-  export const withdrawMoney = (amount) => {
-    return (dispatch) => {
-      dispatch({
-        type: 'withdraw',
-        payload: amount,
-      });
-    };
-  };
+const withdrawMoney = (name, amount) => {
+  return {
+    type: 'WITHDRAW_MONEY',
+    payload: {
+      name: name,
+      amount: amount
+    }
+  }
+};
 
-  // export const addProduct = (amount) => {
-  //   return (dispatch) => {
-  //     dispatch({
-  //       type: 'withdraw',
-  //       payload: amount,
-  //     });
-  //   };
-  // };
-  // export const removeProduct = (amount) => {
-  //   return (dispatch) => {
-  //     dispatch({
-  //       type: 'withdraw',
-  //       payload: amount,
-  //     });
-  //   };
-  // };
-  
+const depositMoney = (name, amount) => {
+  return {
+    type: 'DEPOSIT_MONEY',
+    payload: {
+      name: name,
+      amount: amount
+    }
+  }
+};
+
+export const actionCreators = {
+  // ... other action creators ...
+  withdrawMoney,
+  depositMoney,
+};
+ 
