@@ -1,0 +1,99 @@
+
+.logo{
+    background-color: #007bff;
+    color: #007bff;
+    width: 35px;
+    height: 35px;
+    margin:0px 10px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 1rem;
+    align-items: center;
+    .item2{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        position: relative;
+    }
+    .counter{
+        position: absolute;
+        padding: 0px;
+        margin: 0px;
+        color: red;
+        font-size: 20px;
+        right: 0px;
+        top: -5px;
+        
+    }
+  }
+
+.item1{
+    font-size: 2rem;
+}
+  
+.Search{
+    input{
+        border-radius: 10px;
+        padding: 5px;
+        text-align: center;
+        border: none;
+        outline: none;
+
+    }
+    
+}
+
+.container{
+    height: 100vh;
+}
+
+.card{
+   
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    div{
+        flex-grow: 1;
+        justify-content: center;
+        text-align: center;
+    }
+    div:last-child{
+        
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        
+    }
+    button{
+        background-color: blue;
+        padding: 5px 10px;
+        color: white;
+        border: none;
+         
+    }
+   button:last-child{
+    background-color:  rgb(10, 10, 204);
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: -5px 5px 10px 1px navy inset;
+   }
+   button:last-child:hover{
+    background-color:  navy;
+    border-radius: 0px 5px 5px 0px;
+   }
+   button:first-child{
+    background-color:  rgb(10, 10, 204);
+    border-radius:  5px 0px 0px 5px ;
+    box-shadow: 5px 5px 10px 1px navy inset;
+   }
+   button:first-child:hover{
+    background-color:  navy;
+    border-radius:  5px 0px 0px 5px ;
+   }
+
+}
